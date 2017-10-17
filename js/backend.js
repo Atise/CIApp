@@ -6,7 +6,7 @@ function storeRepo() {
     var check = /https?:\/\/(.+?\.)?github\.com(\/[A-Za-z0-9\-\._~:\/\?#\[\]@!$&'\(\)\*\+,;\=]*)?/;
 
     if (theGit.match(check)) {
-        //Gitrepository är sparat i variabeln GIT
+        //Gitrepository är sparat i variabeln theGIT
 
         document.getElementById("headLine").innerHTML = theGit;
 
