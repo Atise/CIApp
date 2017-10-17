@@ -5,13 +5,12 @@
 }
 
 #upperHalf {
-    background: url('../images/modernView.png') 100% 0 no-repeat fixed;
-    width: 100%;
-    height: 50%;
+    background: url('../images/modernView.png') 50% 0 no-repeat;
+    max-width: 100%;
+    height: 50Vh;
     margin: 0;
-    align-items: flex-start;
-    justify-content: space-around;
-    display: flex;
+    padding: 200px 0 260px 0;
+    background-size: cover;
 
 }
 
@@ -19,7 +18,7 @@
     background-color: #C5C9B8;
     width: 100%;
     color: #333333;
-    height: 50%;
+    height: 50Vh;
     margin: 0 auto;
     overflow: hidden;
     align-items: center;

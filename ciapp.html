@@ -60,26 +60,29 @@
 
 <!-- Webbsidan är uppdelad i divar -->
 
-<section class="upperHalf">
+<div id="upperHalf">
     <div class="row"></div>
-    <div class ="col-6 .col-md-4">
+    <div class="col-6 .col-md-4">
         <h1 id="headLine">Enter your Git please</h1>
     </div>
-</section>
-<section class="lowerHalf">
-        <div class="gitRepoContainer">
-            <form class="form-group">
-                <label id="gitLabel" class="from-control-label" for="repoInput">Enter you Git repository</label>
-                <input type="text" class="form-control form-control-lg" id="repoInput">
-            </form>
-            <button class="btn btn-outline-success" id="submitRepo" onclick="storeRepo()" type="submit">
-                Submit
-            </button>
+</div>
+
+<div id="lowerHalf">
+    <div class="enterGitContainer">
+        <div class="text-left">
+            <div class="col-sm-10 form-group-lg">
+                <div class="gitRepoContainer">
+                    <form class="form-group">
+                        <label id="gitLabel" class="from-control-label" for="repoInput">Enter you Git repository</label>
+                        <input type="text" class="form-control form-control-lg" id="repoInput">
+                    </form>
+                    <button class="btn btn-outline-success" id="submitRepo" onclick="storeRepo()" type="submit">
+                        Submit
+                    </button>
+                </div>
+            </div>
         </div>
-</section>
-
-
-
-
+    </div>
+</div>
 </body>
 </html>
