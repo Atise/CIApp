@@ -1,0 +1,56 @@
+.navbar {
+    margin-bottom: 0 !important;
+    border-radius: 0 !important;
+    border: 0;
+}
+
+#upperHalf {
+    background: url('../images/modernView.png') 100% 0 no-repeat fixed;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    align-items: flex-start;
+    justify-content: space-around;
+    display: flex;
+
+}
+
+#lowerHalf {
+    background-color: #C5C9B8;
+    width: 100%;
+    color: #333333;
+    height: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    float: none;
+    padding: 0 0 2rem;
+}
+
+#repoInput {
+    min-width: 600px;
+    max-width: 33%;
+}
+
+/* BootStrap media querys */
+
+@media (min-width: 576px) {
+
+}
+
+/*Smal tablets. 768px +*/
+@media (min-width: 768px) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (1200px and up) */
+@media (min-width: 1200px) {
+
+}
