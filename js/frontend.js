@@ -1,3 +1,3 @@
-$(window).on('load',function(){
-    $('#modalForm').modal('show');
+$(document).ready(function(){
+    $("#modalForm").modal('show');
 });
