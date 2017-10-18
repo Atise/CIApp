@@ -18,6 +18,19 @@
     background-size: cover;
 
 }
+#modalForm{
+    position: absolute;
+
+    background-color: rgba(0,0,0,.0001) !important;
+
+    left: 50%;
+    /* now you must set a margin left under zero - value is a half width your window */
+    margin-left: -312px;
+    /* this same situation is with height - example */
+    height: 500px;
+    top: 50%;
+    margin-top: -250px;
+}
 
 #lowerHalf {
     background-color: #ffffff;
