@@ -3,6 +3,11 @@
     border-radius: 0 !important;
     border: 0;
 }
+#headLine{
+    font-family: "Abril Fatface";
+    font-size: 100px;
+    color: #ffffff;
+}
 
 #upperHalf {
     background: url('../images/modernView.png') 50% 0 no-repeat;
@@ -15,7 +20,7 @@
 }
 
 #lowerHalf {
-    background-color: #C5C9B8;
+    background-color: #ffffff;
     width: 100%;
     color: #333333;
     height: 50Vh;
@@ -26,9 +31,11 @@
     display: flex;
     float: none;
     padding: 0 0 2rem;
+
+
 }
 
-#repoInput {
+#repoInput, #projectNameInput {
     min-width: 600px;
     max-width: 33%;
 }
