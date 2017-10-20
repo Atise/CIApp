@@ -4,6 +4,12 @@
     border: 0;
 }
 
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 #headLine {
     font-family: "Abril Fatface";
     color: #ffffff;
@@ -57,8 +63,11 @@
 /* BootStrap media querys */
 
 /*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
+@media (min-width: 544px) {
 
+    #headLine {
+        font-size: 20px;
+    }
 
     #gitForm {
         top: 65%;
@@ -70,49 +79,93 @@
     @media (min-width: 768px) {
     }
 
-    /*Large devices (desktops, 992px and up)*/
-    @media (min-width: 992px) {
+    #repoInput, #projectNameInput {
+        min-width: 340px;
+        min-height: 50px;
     }
 
-    /*Extra large devices (large desktops, 1200px and up)*/
-    @media (min-width: 1200px) {
-
-        #repoInput, #projectNameInput {
-            min-width: 340px;
-            min-height: 50px;
-        }
-        #gitForm {
-            top: 62%;
-            width: 30%;
-            border-radius: 25px;
-        }
-        #headLine {
-            font-size: 50px;
-        }
-        #upperHalf, #lowerHalf {
-            height: 50Vh;
-        }
+    #gitForm {
+        top: 62%;
+        width: 30%;
+        border-radius: 25px;
     }
 
-    /* Extremly large devices (desktops, 2000px and up)*/
-    @media (min-width: 2000px) {
+    #headLine {
+        font-size: 50px;
+    }
 
-        #repoInput, #projectNameInput {
-            min-width: 580px;
-            max-height: 20%;
-        }
-        #gitForm {
+    #upperHalf, #lowerHalf {
+        height: 50Vh;
+    }
+}
 
-            top: 45.5%;
-            width: 25%;
-            border-radius: 25px;
-        }
-        #headLine {
-            font-size: 100px;
-        }
-        #upperHalf, #lowerHalf {
-            height: 50Vh;
-        }
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+}
+
+#repoInput, #projectNameInput {
+    min-width: 340px;
+    min-height: 50px;
+}
+
+#gitForm {
+    top: 62%;
+    width: 30%;
+    border-radius: 25px;
+}
+
+#headLine {
+    font-size: 50px;
+}
+
+#upperHalf, #lowerHalf {
+    height: 50Vh;
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+    #repoInput, #projectNameInput {
+        min-width: 340px;
+        min-height: 50px;
+    }
+
+    #gitForm {
+        top: 62%;
+        width: 30%;
+        border-radius: 25px;
+    }
+
+    #headLine {
+        font-size: 50px;
+    }
+
+    #upperHalf, #lowerHalf {
+        height: 50Vh;
+    }
+}
+
+/* Extremly large devices (desktops, 2000px and up)*/
+@media (min-width: 2000px) {
+
+    #repoInput, #projectNameInput {
+        min-width: 580px;
+        max-height: 20%;
+    }
+
+    #gitForm {
+
+        top: 45.5%;
+        width: 25%;
+        border-radius: 25px;
+    }
+
+    #headLine {
+        font-size: 100px;
+    }
+
+    #upperHalf, #lowerHalf {
+        height: 50Vh;
     }
 }
 
