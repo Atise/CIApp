@@ -23,5 +23,6 @@ fs.readFile('./job2.yml', 'utf8', function (e, data) {
 
         console.log(file[0].defaults.scm[0].git);
 
+        
     }
 });
