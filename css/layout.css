@@ -6,14 +6,12 @@
 
 #headLine {
     font-family: "Abril Fatface";
-    font-size: 100px;
     color: #ffffff;
 }
 
 #upperHalf {
     background: url('../images/modernView.png') 50% 0 no-repeat;
     max-width: 100%;
-    height: 50Vh;
     margin: 0;
     padding: 200px 0 260px 0;
     background-size: cover;
@@ -25,13 +23,12 @@
 }
 
 #gitForm {
-    border-radius: 25px;
     background: rgba(0, 0, 0, 0.8);
     position: absolute;
-    top: 46.4%;
-    padding-bottom: 0.5%;
-    max-height: 20%;
-    width: 25%;
+    padding-top: 0.5%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    padding-bottom: 1%;
     margin: auto;
     color: #333333;
     left: 0;
@@ -47,7 +44,6 @@
     background-color: #ffffff;
     width: 100%;
     color: #333333;
-    height: 50Vh;
     margin: 0 auto;
     overflow: hidden;
     align-items: center;
@@ -58,28 +54,66 @@
 
 }
 
-#repoInput, #projectNameInput {
-    min-width: 600px;
-    max-width: 33%;
-}
-
 /* BootStrap media querys */
 
+/*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
 
+
+    #gitForm {
+        top: 65%;
+        width: 25%;
+        border-radius: 25px;
+    }
+
+    /*Medium devices (tablets, 768px and up)*/
+    @media (min-width: 768px) {
+    }
+
+    /*Large devices (desktops, 992px and up)*/
+    @media (min-width: 992px) {
+    }
+
+    /*Extra large devices (large desktops, 1200px and up)*/
+    @media (min-width: 1200px) {
+
+        #repoInput, #projectNameInput {
+            min-width: 340px;
+            min-height: 50px;
+        }
+        #gitForm {
+            top: 62%;
+            width: 30%;
+            border-radius: 25px;
+        }
+        #headLine {
+            font-size: 50px;
+        }
+        #upperHalf, #lowerHalf {
+            height: 50Vh;
+        }
+    }
+
+    /* Extremly large devices (desktops, 2000px and up)*/
+    @media (min-width: 2000px) {
+
+        #repoInput, #projectNameInput {
+            min-width: 580px;
+            max-height: 20%;
+        }
+        #gitForm {
+
+            top: 45.5%;
+            width: 25%;
+            border-radius: 25px;
+        }
+        #headLine {
+            font-size: 100px;
+        }
+        #upperHalf, #lowerHalf {
+            height: 50Vh;
+        }
+    }
 }
 
-/*Smal tablets. 768px +*/
-@media (min-width: 768px) {
 
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
-}
-
-/* Large devices (1200px and up) */
-@media (min-width: 1200px) {
-
-}

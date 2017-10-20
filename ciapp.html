@@ -63,31 +63,30 @@
 <!-- Webbsidan är uppdelad i divar -->
 
 <div id="upperHalf">
-    <div class="row"></div>
-    <div class="col-6 .col-md-4">
-        <h1 id="headLine">Enter your Git please</h1>
+    <div class="container-fluid">
+        <div class="row"></div>
+        <div class="col-6 .col-md-4">
+            <h1 id="headLine">Let us exam your Git repositories</h1>
+        </div>
     </div>
 </div>
-
 <div id=gitForm>
-    <div class="d-flex justify-content-center">
-        <div class="text-left">
-            <form class="col-sm-10 form-group-lg ">
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <form>
                 <div class="form-group">
-                    <div class="projectNameContainer">
-                        <label id="nameLabel" class="from-control-label" for="projectNameInput">Name your
-                            project</label>
-                        <input type="text" class="form-control form-control-lg" id="projectNameInput">
-                    </div>
+                    <label id="nameLabel" for="projectNameInput">Name your
+                        project</label>
+                    <input type="text" class="form-control" id="projectNameInput"
+                           placeholder="A project name you can live with">
                 </div>
                 <div class="form-group">
-                    <div class="gitRepoContainer">
-                        <label id="gitLabel" class="from-control-label" for="repoInput">Enter you Git
-                            repository</label>
-                        <input type="text" class="form-control form-control-lg" id="repoInput">
-                    </div>
+                    <label id="gitLabel" for="projectNameInput">Enter your Git
+                        repository</label>
+                    <input type="text" class="form-control" id=repoInput" placeholder="A valid Gitrepo...">
                 </div>
-                <button class="btn btn-outline-success" id="submitRepo" onclick="storeRepo()" type="submit">
+                <button class="btn btn-outline-success" id="submitRepo" onclick="storeRepo()"
+                        type="submit">
                     Submit
                 </button>
             </form>
