@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- All images included in the project is free for commercial use -->
 
 <head>
     <meta charset="UTF-8">
@@ -24,16 +25,18 @@
 
     <link rel="stylesheet" type="text/css" href="css/layout.css">
     <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700i,900" rel="stylesheet">
 
     <!-- JS -->
     <script src="js/frontend.js"></script>
-    <title>Teacher Application</title>
+    <script src="js/backend.js"></script>
+    <title>Continuous integration for GIT repositories</title>
 
 </head>
 
 <body>
-
+<!-- Kod för navigationsmeny-->
 <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -45,28 +48,55 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#Git">Add Git Repository</a>
+                <a class="nav-link" href="#upperHalf">Add Git Repository</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#TestReport">Create Test</a>
+                <a class="nav-link" href="#TestReport">View test results</a>
             </li>
-                   </ul>
+        </ul>
         <form class="form-inline my-2 my-lg-0">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
         </form>
     </div>
 </nav>
 
-<div id="Git">
+<!-- Webbsidan är uppdelad i divar -->
 
-<h1>Enter Git repository</h1>
+<div id="upperHalf">
+    <div class="container-fluid">
+        <div class="row"></div>
+        <div class="col-6 .col-md-4">
+            <h1 id="headLine">Let us exam your Git repositories</h1>
+        </div>
+    </div>
+</div>
+<div id=gitForm>
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <form>
+                <div class="form-group">
+                    <label id="nameLabel" for="projectNameInput">Name your
+                        project</label>
+                    <input type="text" class="form-control" id="projectNameInput"
+                           placeholder="A project name you can live with">
+                </div>
+                <div class="form-group">
+                    <label id="gitLabel" for="projectNameInput">Enter your Git
+                        repository</label>
+                    <input type="text" class="form-control" id=repoInput" placeholder="A valid Gitrepo...">
+                </div>
+                <button class="btn btn-outline-success" id="submitRepo" onclick="storeRepo()"
+                        type="submit">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
 </div>
 
-<div id="TestReport">
-    <h1>View Test report</h1>
+<div class=.hidden-xs-down>
+    <div id="lowerHalf">
+    </div>
 </div>
-
-
-
 </body>
 </html>
