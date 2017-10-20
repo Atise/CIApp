@@ -81,8 +81,7 @@
 
     #repoInput, #projectNameInput {
         min-width: 340px;
-        min-height: 50px;
-    }
+        }
 
     #gitForm {
         top: 62%;
@@ -105,7 +104,7 @@
 
 #repoInput, #projectNameInput {
     min-width: 340px;
-    min-height: 50px;
+
 }
 
 #gitForm {
@@ -127,7 +126,7 @@
 
     #repoInput, #projectNameInput {
         min-width: 340px;
-        min-height: 50px;
+
     }
 
     #gitForm {
@@ -150,7 +149,7 @@
 
     #repoInput, #projectNameInput {
         min-width: 580px;
-        max-height: 20%;
+
     }
 
     #gitForm {
