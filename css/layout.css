@@ -145,7 +145,7 @@
 }
 
 /* Extremly large devices (desktops, 2000px and up)*/
-@media (min-width: 2000px) {
+@media (min-width: 1920px) {
 
     #repoInput, #projectNameInput {
         min-width: 580px;
@@ -154,7 +154,7 @@
 
     #gitForm {
 
-        top: 45.5%;
+        top: 46.6%;
         width: 25%;
         border-radius: 25px;
     }
