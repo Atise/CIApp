@@ -35,7 +35,7 @@
   },
   {
     "job": {
-      "name": "newJobName7",
+      "name": "newJobName20",
       "node": "master",
       "builders": [
         {

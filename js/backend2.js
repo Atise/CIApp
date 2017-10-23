@@ -8,7 +8,7 @@ fs.readFile('./job2.yml', 'utf8', function (e, data) {
     } else {
         file = yaml.safeLoad(data, 'utf8');
 
-        var newJobName = "newJobName7";
+        var newJobName = "newJobName20";
         var newGitRepo = "testgit.com";
         var newGitConfigName = "confname";
         var newGitConfigEmail = "confemail";
