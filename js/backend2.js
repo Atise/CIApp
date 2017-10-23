@@ -10,8 +10,8 @@ fs.readFile('./job2.yml', 'utf8', function (e, data) {
 
         var newJobName = "newJobName7";
         var newGitRepo = "testgit.com";
-        var newGitConfigName = "confname";
-        var newGitConfigEmail = "confemail";
+        var newGitConfigName = "confname"; // users name
+        var newGitConfigEmail = "confemail"; // user email
 
         file[0].defaults.scm[0].git.url = newGitRepo;
         file[0].defaults.scm[0].git['git-config-name'] = newGitConfigName;
