@@ -27,15 +27,20 @@
 #nameLabel, #gitLabel {
     color: #ffffff;
 }
+.card{
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 25px;
 
-#gitForm {
+}
+
+/*#gitForm {
     background: rgba(0, 0, 0, 0.8);
     position: absolute;
     padding-top: 0.5%;
-    padding-left: 0.5%;
-    padding-right: 0.5%;
+    !*padding-left: 0.3%;
+    padding-right: 0.3%;*!
     padding-bottom: 1%;
-    margin: auto;
+
     color: #333333;
     left: 0;
     right: 0;
@@ -44,7 +49,7 @@
     justify-content: space-around;
     display: flex;
     float: none;
-}
+}*/
 
 #lowerHalf {
     background-color: #ffffff;
@@ -57,6 +62,7 @@
     display: flex;
     float: none;
     padding: 0 0 2rem;
+    border-radius: 10%;
 
 }
 
@@ -70,9 +76,8 @@
     }
 
     #gitForm {
-        top: 65%;
-        width: 25%;
-        border-radius: 25px;
+
+
     }
 
     /*Medium devices (tablets, 768px and up)*/
@@ -84,9 +89,8 @@
     }
 
     #gitForm {
-        top: 62%;
-        width: 30%;
-        border-radius: 25px;
+
+
     }
 
     #headLine {
@@ -108,9 +112,8 @@
 }
 
 #gitForm {
-    top: 62%;
-    width: 30%;
-    border-radius: 25px;
+
+
 }
 
 #headLine {
@@ -130,9 +133,8 @@
     }
 
     #gitForm {
-        top: 62%;
-        width: 30%;
-        border-radius: 25px;
+
+
     }
 
     #headLine {
@@ -148,15 +150,16 @@
 @media (min-width: 1920px) {
 
     #repoInput, #projectNameInput {
-        min-width: 580px;
+        width: 100%;
+      margin-left: 1%;
+
 
     }
 
     #gitForm {
 
-        top: 46.6%;
-        width: 25%;
-        border-radius: 25px;
+
+
     }
 
     #headLine {

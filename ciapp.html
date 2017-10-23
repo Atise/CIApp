@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -35,68 +35,99 @@
 
 </head>
 
+
 <body>
-<!-- Kod för navigationsmeny-->
-<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand mb-0" href="#">Continuous integration</a>
+<main>
+    <!-- Kod för navigationsmeny-->
+    <div class="sticky-top">
+        <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mb-0" href="#">Continuous integration</a>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#upperHalf">Add Git Repository</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#TestReport">View test results</a>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
-        </form>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#upperHalf">Add Git Repository</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#TestReport">View test results</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Logout</button>
+                </form>
+            </div>
+        </nav>
     </div>
-</nav>
 
-<!-- Webbsidan är uppdelad i divar -->
+    <!-- Webbsidan är uppdelad i divar -->
 
-<div id="upperHalf">
-    <div class="container-fluid">
-        <div class="row"></div>
-        <div class="col-6 .col-md-4">
-            <h1 id="headLine">Let us exam your Git repositories</h1>
+    <div id="upperHalf">
+        <div class="container-fluid">
+            <div class="row"></div>
+            <div class="col-6 .col-md-4">
+                <h1 id="headLine">Let us exam your Git repositories</h1>
+            </div>
         </div>
     </div>
-</div>
-<div id=gitForm>
     <div class="container">
-        <div class="d-flex justify-content-center">
-            <form>
--                <div class="form-group">
-              <label id="nameLabel" for="projectNameInput">Name your
-                        project</label>
-                    <input type="text" class="form-control" id="projectNameInput"
-                           placeholder="A project name you can live with">
-                </div>-->
-                <div class="form-group">
-                    <label id="gitLabel" for="repoInput">Enter your Git
-                        repository</label>
-                    <input type="text" class="form-control" id=repoInput placeholder="A valid Gitrepo...">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <br>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+                <div class=card>
+                    <div id=gitForm>
+                        <div class="card-block">
+                            <form>
+
+                                <div class="form-group">
+                                    <label id="nameLabel" for="projectNameInput">Name your
+                                        project</label>
+                                    <input type="text" class="form-control" id="projectNameInput"
+                                           placeholder="A project name you can live with">
+                                </div>
+
+                                <div class="form-group">
+                                    <label id="gitLabel" for="repoInput">Enter your Git
+                                        repository</label>
+                                    <input type="text" class="form-control" id=repoInput
+                                           placeholder="A valid Gitrepo...">
+                                </div>
+                                <button class="btn btn-outline-success" id="submitRepo" onclick="storeRepo()"
+                                        type="submit">
+                                    Submit
+                                </button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <button class="btn btn-outline-success" id="submitRepo" onclick="storeRepo()"
-                        type="submit">
-                    Submit
-                </button>
-            </form>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <br>
         </div>
     </div>
-</div>
 
-<div class=.hidden-xs-down>
-    <div id="lowerHalf">
+
+    <div class=.hidden-xs-down>
+        <div id="lowerHalf">
+        </div>
     </div>
-</div>
+</main>
+
+<footer>
+
+</footer>
 </body>
+
+
 </html>
+
+
