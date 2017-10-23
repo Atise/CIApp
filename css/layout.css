@@ -81,7 +81,7 @@
 
     #repoInput, #projectNameInput {
         min-width: 340px;
-        }
+    }
 
     #gitForm {
         top: 62%;
